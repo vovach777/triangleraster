@@ -30,14 +30,6 @@ inline void Bilinear(size_t input_width, size_t input_height, InputFunctor && im
             const auto c = image(x_l,y_h); //data[(int)y_h * input_width + (int)x_l];
             const auto d = image(x_h,y_h); //data[(int)y_h * input_width + (int)x_h];
 
-            /*
-            float pixel = a * (1.0 - x_weight) * (1.0 - y_weight) +
-                          b * x_weight * (1.0 - y_weight) +
-                          c * y_weight * (1.0 - x_weight) +
-                          d * x_weight * y_weight;
-
-            output([i * output_width + j] = pixel; */
-
             output(j,i, a * x_weight_inv * y_weight_inv +
                         b * x_weight * y_weight_inv +
                         c * y_weight * x_weight_inv +

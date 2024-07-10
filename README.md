@@ -1,9 +1,8 @@
 triangleraster
 ==============
 
-This is an SDL-based demo written in C++ that features a simple triangle rasterization algorithm. It was originally created to accompany [this article](https://www.joshbeam.com/articles/triangle_rasterization/).
+This is header-only fork of a simple triangle rasterization algorithm. It was originally created to accompany [this article](https://www.joshbeam.com/articles/triangle_rasterization/).
 
-This demo has been tested on Ubuntu 18.10. To build it, make sure that you have the SDL2 development package installed and run 'make'. This will create an executable called 'triangleraster' that you can then run. Press the 'Escape' key to exit the demo.
 
 License
 -------

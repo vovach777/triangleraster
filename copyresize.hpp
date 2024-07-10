@@ -46,7 +46,6 @@ inline void Bilinear(size_t input_width, size_t input_height, InputFunctor && im
         auto C = v2-v0;
         auto D = v1;
         return D + frac * (C + frac * (B + frac * A));
-        //return D + (C + (B + A * frac) *  frac ) * frac;
     }
 
     template<class InputT = float, class ElementT>

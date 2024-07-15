@@ -227,7 +227,7 @@ inline Vec3<Float> Mix(Vec3<Float> a, Vec3<Float> b, Float v)
 }
 
 template <typename Float>
-inline Vec3 Mix(Vec3<Float> a, Vec3<Float> b, Vec3<Float> c, float ab, float bc)
+inline Vec3<Float> Mix(Vec3<Float> a, Vec3<Float> b, Vec3<Float> c, float ab, float bc)
 {
     return  Mix(  Mix(a,b,ab), c, bc);
 }    

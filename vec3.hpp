@@ -92,11 +92,9 @@ union Vec3{
 
 
     inline Vec3& operator /= (Float v) {
-        if (v > 0) {
-            r /= v;
-            g /= v;
-            b /= v;
-        }
+        r /= v;
+        g /= v;
+        b /= v;
         return *this;
     }
 
